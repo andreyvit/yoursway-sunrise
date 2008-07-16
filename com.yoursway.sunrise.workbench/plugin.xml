@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.internalTweaklets">
+      <tweaklet
+            definition="org.eclipse.ui.internal.tweaklets.WorkbenchImplementation"
+            description="Enables the Sunrise presentation"
+            id="Sunrise.tweaklet1"
+            implementation="com.yoursway.sunrise.workbench.SunriseWorkbenchTweaklet"
+            name="Sunrise Workbench Tweak">
+      </tweaklet>
+   </extension>
+   
+</plugin>
