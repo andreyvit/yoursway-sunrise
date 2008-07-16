@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="Workbench" version="1.1">
+    <plugin id="org.eclipse.ui.workbench"/>
+    <package name="org.eclipse.ui">
+        <type implement="false" name="IActionBars"/>
+        <type implement="false" name="IActionBars2"/>
+        <type implement="false" name="IDecoratorManager"/>
+        <type implement="false" name="IEditorDescriptor"/>
+        <type implement="false" name="IEditorReference"/>
+        <type implement="false" name="IEditorRegistry"/>
+        <type implement="false" name="IEditorSite"/>
+        <type implement="false" name="IFileEditorMapping"/>
+        <type implement="false" name="IFolderLayout"/>
+        <type implement="false" name="IInPlaceEditor"/>
+        <type implement="false" name="IKeyBindingService"/>
+        <type implement="false" name="ILocalWorkingSetManager"/>
+        <type implement="false" name="IMemento"/>
+        <type implement="false" name="INavigationHistory"/>
+        <type implement="false" name="INavigationLocation"/>
+        <type implement="false" name="INestableKeyBindingService"/>
+        <type implement="false" name="IPageLayout"/>
+        <type implement="false" name="IPageService"/>
+        <type implement="false" name="IPartService"/>
+        <type implement="false" name="IPerspectiveDescriptor"/>
+        <type implement="false" name="IPerspectiveRegistry"/>
+        <type implement="false" name="IPlaceholderFolderLayout"/>
+        <type implement="false" name="ISelectionService"/>
+        <type implement="false" name="ISharedImages"/>
+        <type implement="false" name="ISizeProvider"/>
+        <type implement="false" extend="false" name="ISources"/>
+        <type implement="false" name="IViewLayout"/>
+        <type implement="false" name="IViewReference"/>
+        <type implement="false" name="IViewSite"/>
+        <type implement="false" name="IWorkbench"/>
+        <type implement="false" name="IWorkbenchActionConstants"/>
+        <type implement="false" name="IWorkbenchPage"/>
+        <type implement="false" name="IWorkbenchPartConstants"/>
+        <type implement="false" name="IWorkbenchPartDescriptor"/>
+        <type implement="false" name="IWorkbenchPartReference"/>
+        <type implement="false" name="IWorkbenchPartSite"/>
+        <type implement="false" name="IWorkbenchPreferenceConstants"/>
+        <type implement="false" name="IWorkbenchSite"/>
+        <type implement="false" name="IWorkbenchWindow"/>
+        <type implement="false" name="IWorkingSet"/>
+        <type implement="false" name="IWorkingSetManager"/>
+        <type extend="false" name="PartInitException"/>
+        <type extend="false" name="WorkbenchException"/>
+    </package>
+    <package name="org.eclipse.ui.actions">
+        <type extend="false" name="ExportResourcesAction"/>
+        <type extend="false" name="ImportResourcesAction"/>
+        <type extend="false" name="LabelRetargetAction"/>
+        <type extend="false" name="NewWizardAction"/>
+        <type extend="false" name="OpenNewPageMenu"/>
+        <type extend="false" name="OpenNewWindowMenu"/>
+        <type extend="false" name="OpenPerspectiveMenu"/>
+        <type extend="false" name="RetargetAction"/>
+    </package>
+    <package name="org.eclipse.ui.activities">
+        <type implement="false" name="IActivity"/>
+        <type implement="false" name="IActivityManager"/>
+        <type implement="false" name="IActivityPatternBinding"/>
+        <type implement="false" name="IActivityRequirementBinding"/>
+        <type implement="false" name="ICategory"/>
+        <type implement="false" name="ICategoryActivityBinding"/>
+        <type implement="false" name="IIdentifier"/>
+        <type implement="false" name="IMutableActivityManager"/>
+        <type implement="false" name="ITriggerPoint"/>
+        <type implement="false" extend="false" name="ITriggerPointAdvisor"/>
+        <type implement="false" name="ITriggerPointManager"/>
+        <type implement="false" name="IWorkbenchActivitySupport"/>
+    </package>
+    <package name="org.eclipse.ui.application">
+        <type implement="false" name="IActionBarConfigurer"/>
+        <type implement="false" name="IWorkbenchConfigurer"/>
+        <type implement="false" name="IWorkbenchWindowConfigurer"/>
+    </package>
+    <package name="org.eclipse.ui.browser">
+        <type implement="false" name="IWebBrowser"/>
+        <type implement="false" name="IWorkbenchBrowserSupport"/>
+    </package>
+    <package name="org.eclipse.ui.commands">
+        <type extend="false" name="CommandException"/>
+        <type implement="false" name="ICategory"/>
+        <type implement="false" name="ICommand"/>
+        <type implement="false" name="ICommandManager"/>
+        <type implement="false" name="IKeyConfiguration"/>
+        <type implement="false" name="IKeySequenceBinding"/>
+        <type implement="false" name="IWorkbenchCommandSupport"/>
+    </package>
+    <package name="org.eclipse.ui.contexts">
+        <type extend="false" name="ContextException"/>
+        <type implement="false" name="IContext"/>
+        <type implement="false" name="IContextManager"/>
+        <type implement="false" name="IWorkbenchContextSupport"/>
+    </package>
+    <package name="org.eclipse.ui.dialogs">
+        <type implement="false" name="IWorkingSetEditWizard"/>
+        <type implement="false" name="IWorkingSetNewWizard"/>
+        <type implement="false" name="IWorkingSetSelectionDialog"/>
+        <type extend="false" name="ListSelectionDialog"/>
+        <type extend="false" name="PropertyDialogAction"/>
+    </package>
+    <package name="org.eclipse.ui.handlers">
+        <type implement="false" extend="false" name="IHandlerService"/>
+    </package>
+    <package name="org.eclipse.ui.help">
+        <type extend="false" name="DialogPageContextComputer"/>
+        <type implement="false" name="IWorkbenchHelpSystem"/>
+        <type extend="false" name="ViewContextComputer"/>
+        <type extend="false" instantiate="false" name="WorkbenchHelp"/>
+    </package>
+    <package name="org.eclipse.ui.intro">
+        <type implement="false" name="IIntroManager"/>
+        <type implement="false" name="IIntroPart"/>
+        <type implement="false" name="IIntroSite"/>
+    </package>
+    <package name="org.eclipse.ui.keys">
+        <type implement="false" extend="false" name="IBindingService"/>
+        <type extend="false" name="Key"/>
+        <type extend="false" name="NaturalKey"/>
+    </package>
+    <package name="org.eclipse.ui.model">
+        <type extend="false" name="AdaptableList"/>
+    </package>
+    <package name="org.eclipse.ui.operations">
+        <type implement="false" name="IWorkbenchOperationSupport"/>
+    </package>
+    <package name="org.eclipse.ui.part">
+        <type extend="false" name="CellEditorActionHandler"/>
+        <type extend="false" name="CoolItemGroupMarker"/>
+        <type implement="false" name="IPage"/>
+        <type implement="false" name="IPageSite"/>
+        <type extend="false" name="MessagePage"/>
+        <type extend="false" name="MultiEditorInput"/>
+        <type extend="false" name="MultiPageSelectionProvider"/>
+        <type extend="false" name="PageBook"/>
+        <type extend="false" name="PluginTransferData"/>
+        <type extend="false" name="WorkbenchPart"/>
+    </package>
+    <package name="org.eclipse.ui.presentations">
+        <type implement="false" name="IPartMenu"/>
+        <type implement="false" name="IPresentablePart"/>
+        <type implement="false" name="IPresentationSerializer"/>
+        <type implement="false" name="IStackPresentationSite"/>
+    </package>
+    <package name="org.eclipse.ui.progress">
+        <type implement="false" name="IProgressService"/>
+        <type implement="false" name="IWorkbenchSiteProgressService"/>
+    </package>
+    <package name="org.eclipse.ui.themes">
+        <type implement="false" name="ITheme"/>
+        <type implement="false" name="IThemeManager"/>
+    </package>
+    <package name="org.eclipse.ui.views">
+        <type implement="false" name="IStickyViewDescriptor"/>
+        <type implement="false" name="IViewDescriptor"/>
+        <type implement="false" name="IViewRegistry"/>
+    </package>
+    <package name="org.eclipse.ui.wizards">
+        <type implement="false" name="IWizardCategory"/>
+        <type implement="false" name="IWizardDescriptor"/>
+        <type implement="false" name="IWizardRegistry"/>
+    </package>
+</component>
