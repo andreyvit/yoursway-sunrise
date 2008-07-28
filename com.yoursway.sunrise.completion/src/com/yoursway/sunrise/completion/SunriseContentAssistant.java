@@ -1,10 +1,8 @@
 package com.yoursway.sunrise.completion;
 
-import static com.google.common.collect.Lists.newArrayList;
 import static com.google.common.collect.Lists.newArrayListWithCapacity;
 import static java.lang.String.format;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
