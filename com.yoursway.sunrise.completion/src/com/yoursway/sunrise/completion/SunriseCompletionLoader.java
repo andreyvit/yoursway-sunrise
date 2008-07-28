@@ -10,6 +10,7 @@ import org.eclipse.jface.text.contentassist.ContentAssistant;
 import org.eclipse.jface.text.contentassist.IContentAssistProcessor;
 import org.eclipse.jface.text.contentassist.IContentAssistant;
 import org.eclipse.jface.text.source.SourceViewer;
+import org.eclipse.swt.widgets.Display;
 import org.eclipse.ui.IEditorPart;
 import org.eclipse.ui.IPageListener;
 import org.eclipse.ui.IPartListener2;
@@ -53,7 +54,30 @@ public class SunriseCompletionLoader implements IStartup {
     }
 
     protected void updateActiveWindow() {
+        System.out.println("SunriseCompletionLoader.updateActiveWindow()");
         window = workbench.getActiveWorkbenchWindow();
+        if (window != null)
+            hookWindow();
+        else {
+            final Display display = Display.getDefault();
+            Runnable checkRunnable = new Runnable() {
+
+                public void run() {
+                    System.out.println("SunriseCompletionLoader: waiting for an active window...");
+                    window = workbench.getActiveWorkbenchWindow();
+                    if (window != null)
+                        hookWindow();
+                    else
+                        display.timerExec(200, this);
+                }
+                
+            };
+            display.asyncExec(checkRunnable);
+        }
+    }
+
+    private void hookWindow() {
+        System.out.println("SunriseCompletionLoader.hookWindow()");
         window.addPageListener(new IPageListener() {
 
             public void pageActivated(IWorkbenchPage page) {
@@ -71,7 +95,14 @@ public class SunriseCompletionLoader implements IStartup {
     }
 
     protected void updateActivePage() {
+        System.out.println("SunriseCompletionLoader.updateActivePage()");
         page = window.getActivePage();
+        if (page != null)
+            hookPage();
+    }
+
+    private void hookPage() {
+        System.out.println("SunriseCompletionLoader.hookPage()");
         page.addPartListener(new IPartListener2() {
 
             public void partActivated(IWorkbenchPartReference partRef) {
@@ -101,6 +132,7 @@ public class SunriseCompletionLoader implements IStartup {
             }
             
         });
+        updateActiveEditor();
     }
 
     protected void updateActiveEditor() {
